@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-Anonymity Anonymizer</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
-        .table {
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-        .table th, .table td {
-            border: 1px solid #ddd;
-            padding: 10px;
+        body {
+            font-family: Arial, sans-serif;
             text-align: center;
+            padding: 20px;
         }
-        .table th {
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: auto;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table th {
             background-color: #f2f2f2;
         }
+
         .btn-download {
             padding: 10px 20px;
             background-color: green;
@@ -32,13 +56,16 @@
     <div class="container">
         <h1>K-Anonymity Anonymizer</h1>
         <form action="/upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file" accept=".csv" required>
+            <label for="file-upload">Upload CSV File:</label>
+            <input type="file" id="file-upload" name="file" accept=".csv" required title="Choose a CSV file to upload">
             <button type="submit">Anonymize</button>
         </form>
 
         {% if preview %}
             <h2>Preview of Anonymized Data (Top 10 Records):</h2>
-            {{ preview | safe }}
+            <div class="table-container">
+                {{ preview | safe }}
+            </div>
         {% endif %}
 
         {% if download_link %}
