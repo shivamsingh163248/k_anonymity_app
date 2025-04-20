@@ -1,0 +1,9 @@
+Name,Age,Gender,ZIP_Code,Disease
+Alice,20-39,Female,123**,Flu
+Bob,20-39,Male,123**,Cold
+Charlie,40+,Male,123**,COVID-19
+Diana,20-39,Female,123**,Asthma
+Ethan,40+,Male,123**,Diabetes
+Fiona,20-39,Female,123**,Flu
+George,20-39,Male,123**,Cancer
+Hannah,20-39,Female,123**,Cold
