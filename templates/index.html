@@ -2,7 +2,31 @@
 <html>
 <head>
     <title>K-Anonymity Anonymizer</title>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .table th {
+            background-color: #f2f2f2;
+        }
+        .btn-download {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -11,6 +35,15 @@
             <input type="file" name="file" accept=".csv" required>
             <button type="submit">Anonymize</button>
         </form>
+
+        {% if preview %}
+            <h2>Preview of Anonymized Data (Top 10 Records):</h2>
+            {{ preview | safe }}
+        {% endif %}
+
+        {% if download_link %}
+            <a href="/download" class="btn-download">Download Anonymized CSV</a>
+        {% endif %}
     </div>
 </body>
 </html>

@@ -1,9 +1,9 @@
 Name,Age,Gender,ZIP_Code,Disease
-Alice,20-39,Female,123**,Flu
-Bob,20-39,Male,123**,Cold
-Charlie,40+,Male,123**,COVID-19
-Diana,20-39,Female,123**,Asthma
-Ethan,40+,Male,123**,Diabetes
-Fiona,20-39,Female,123**,Flu
-George,20-39,Male,123**,Cancer
-Hannah,20-39,Female,123**,Cold
+Alice,27,Female,12345,Flu
+Bob,38,Male,12345,Cold
+Charlie,45,Male,12346,COVID-19
+Diana,29,Female,12347,Asthma
+Ethan,51,Male,12345,Diabetes
+Fiona,36,Female,12346,Flu
+George,22,Male,12347,Cancer
+Hannah,34,Female,12345,Cold

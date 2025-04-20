@@ -1,0 +1,101 @@
+Name,Age,Gender,ZIP_Code,City,Disease,Phone,Email,Department,Visit_Date
+Jenny,20,Male,57556,Los Angeles,Diabetes,9507204204,jenny0@outlook.com,Cardiology,2023-03-19
+Jenny,60,Female,92873,Los Angeles,Asthma,9556854107,jenny1@gmail.com,Pediatrics,2023-08-24
+Diana,20,Male,63953,Houston,Cancer,9154475340,diana2@yahoo.com,Cardiology,2023-01-18
+George,32,Female,54428,Los Angeles,Asthma,9150727445,george3@gmail.com,Cardiology,2023-03-25
+George,51,Female,45632,Chicago,Cold,9891130403,george4@gmail.com,Pediatrics,2023-11-05
+Bob,60,Male,75380,Phoenix,Diabetes,9485786324,bob5@yahoo.com,Pediatrics,2023-02-02
+Jenny,49,Male,38252,Phoenix,COVID-19,9361303463,jenny6@gmail.com,Neurology,2023-07-28
+George,61,Male,59555,New York,Cold,9189254236,george7@yahoo.com,Pediatrics,2023-07-01
+Alice,48,Male,32119,Houston,Flu,9304457021,alice8@outlook.com,General,2023-01-18
+Fiona,70,Female,87525,Chicago,Cold,9379152752,fiona9@gmail.com,General,2023-08-07
+Alice,41,Male,92606,Los Angeles,Diabetes,9267310956,alice10@gmail.com,Cardiology,2023-08-21
+Jenny,48,Female,33786,Chicago,Asthma,9377515592,jenny11@outlook.com,Cardiology,2023-09-04
+Ian,20,Male,63019,Los Angeles,Diabetes,9753329764,ian12@outlook.com,Orthopedics,2023-09-14
+Hannah,47,Female,75250,Phoenix,Asthma,9366714478,hannah13@gmail.com,Cardiology,2023-03-16
+George,47,Male,73782,Phoenix,Cold,9741767314,george14@yahoo.com,Cardiology,2023-05-26
+Alice,61,Female,22979,Los Angeles,Diabetes,9621729436,alice15@outlook.com,Orthopedics,2023-06-21
+Bob,36,Female,62274,New York,Cancer,9588954453,bob16@outlook.com,Pediatrics,2023-06-27
+Jenny,52,Male,53508,Phoenix,Cancer,9541474225,jenny17@yahoo.com,Cardiology,2023-06-02
+Bob,56,Female,74892,Los Angeles,Diabetes,9536199467,bob18@gmail.com,General,2023-06-02
+Bob,18,Female,19400,Los Angeles,Flu,9251178342,bob19@yahoo.com,General,2023-11-14
+Jenny,40,Male,35014,New York,Cancer,9805438742,jenny20@gmail.com,Orthopedics,2023-04-26
+Ian,25,Male,48210,Houston,Diabetes,9781132278,ian21@yahoo.com,Pediatrics,2023-05-02
+Jenny,26,Female,85158,Chicago,COVID-19,9338230458,jenny22@gmail.com,Orthopedics,2023-03-05
+Alice,20,Female,19210,Phoenix,Asthma,9785230504,alice23@outlook.com,Orthopedics,2023-01-14
+Alice,39,Female,53045,Houston,Cancer,9232672872,alice24@gmail.com,Orthopedics,2023-09-02
+George,46,Male,30960,New York,COVID-19,9250282854,george25@outlook.com,Neurology,2023-08-19
+Charlie,20,Female,89506,Houston,Diabetes,9531436576,charlie26@yahoo.com,General,2023-08-28
+Ethan,70,Male,68370,Chicago,Cold,9802212346,ethan27@gmail.com,Neurology,2023-12-10
+Hannah,66,Male,73602,New York,COVID-19,9867296756,hannah28@outlook.com,General,2023-01-09
+Fiona,68,Male,81859,Chicago,COVID-19,9948253913,fiona29@outlook.com,Cardiology,2023-10-12
+Ian,42,Female,75219,New York,COVID-19,9516656296,ian30@outlook.com,Pediatrics,2023-03-22
+Alice,31,Male,49726,Los Angeles,COVID-19,9838895787,alice31@outlook.com,General,2023-12-04
+Jenny,61,Female,54938,Chicago,Asthma,9204123591,jenny32@gmail.com,General,2023-06-25
+George,32,Male,91819,Houston,Asthma,9673840174,george33@yahoo.com,Pediatrics,2023-05-01
+George,68,Male,84589,Los Angeles,Cancer,9248357182,george34@gmail.com,General,2023-10-19
+Bob,23,Male,76439,New York,Cold,9622001245,bob35@yahoo.com,Orthopedics,2023-11-24
+Diana,33,Female,48887,Chicago,Cold,9112896706,diana36@yahoo.com,General,2023-10-14
+Diana,57,Female,45319,Chicago,Flu,9808146236,diana37@outlook.com,Pediatrics,2023-01-08
+Diana,51,Female,70445,Phoenix,Flu,9747521346,diana38@yahoo.com,Cardiology,2023-12-08
+George,34,Male,22379,Houston,Diabetes,9518528704,george39@yahoo.com,Pediatrics,2023-08-11
+Hannah,44,Female,94874,Los Angeles,Cold,9740098528,hannah40@yahoo.com,General,2023-12-22
+Hannah,32,Male,15983,Los Angeles,Diabetes,9491672121,hannah41@yahoo.com,Orthopedics,2023-10-20
+Alice,51,Male,56191,Chicago,Diabetes,9464569409,alice42@gmail.com,General,2023-12-14
+Charlie,59,Female,35097,New York,Flu,9693032245,charlie43@outlook.com,Neurology,2023-11-12
+Charlie,20,Male,67838,Chicago,Asthma,9569831878,charlie44@outlook.com,Orthopedics,2023-07-27
+Diana,68,Female,12084,Houston,Diabetes,9726406026,diana45@outlook.com,Pediatrics,2023-08-07
+Ian,30,Female,60163,Los Angeles,COVID-19,9220400447,ian46@yahoo.com,Pediatrics,2023-02-01
+Alice,66,Female,69274,Houston,Cold,9385802861,alice47@outlook.com,Neurology,2023-06-27
+Jenny,19,Female,67164,Chicago,COVID-19,9970851175,jenny48@gmail.com,Cardiology,2023-11-23
+Jenny,62,Female,14430,New York,Diabetes,9513377531,jenny49@yahoo.com,Neurology,2023-06-27
+Jenny,27,Male,97801,New York,Cancer,9494633598,jenny50@outlook.com,General,2023-10-19
+Fiona,66,Male,97258,Los Angeles,Asthma,9652327689,fiona51@gmail.com,Pediatrics,2023-03-26
+Jenny,42,Female,89437,Phoenix,Asthma,9293783588,jenny52@yahoo.com,Neurology,2023-07-26
+Hannah,22,Female,98826,New York,Cancer,9521873469,hannah53@yahoo.com,Pediatrics,2023-05-02
+Ian,44,Female,40122,New York,Asthma,9312759717,ian54@gmail.com,Pediatrics,2023-05-23
+Alice,30,Female,52264,Chicago,Diabetes,9650462688,alice55@outlook.com,Pediatrics,2023-08-06
+Charlie,32,Male,12027,Houston,Cold,9640628959,charlie56@outlook.com,Neurology,2023-03-22
+Diana,62,Female,79154,Houston,Flu,9234376920,diana57@gmail.com,Cardiology,2023-11-05
+Alice,31,Male,83919,New York,Cancer,9661920284,alice58@gmail.com,Orthopedics,2023-05-07
+Diana,21,Female,30555,Los Angeles,Cancer,9303137294,diana59@yahoo.com,Pediatrics,2023-07-27
+Bob,65,Female,95878,Phoenix,COVID-19,9559099201,bob60@outlook.com,Cardiology,2023-11-15
+George,66,Female,39511,New York,Asthma,9134818706,george61@yahoo.com,Neurology,2023-06-25
+Jenny,38,Male,26405,Los Angeles,Asthma,9644263454,jenny62@outlook.com,Neurology,2023-03-19
+Fiona,26,Female,30088,Chicago,Cold,9986327987,fiona63@outlook.com,Cardiology,2023-04-24
+Bob,32,Female,71301,Los Angeles,Cold,9991727274,bob64@gmail.com,Neurology,2023-11-10
+Diana,36,Male,72845,Chicago,Cold,9591085263,diana65@outlook.com,Cardiology,2023-02-22
+Bob,41,Female,95410,Phoenix,COVID-19,9458315921,bob66@outlook.com,Pediatrics,2023-10-10
+Bob,40,Female,94528,Phoenix,Diabetes,9635477676,bob67@gmail.com,General,2023-11-06
+Ethan,68,Female,10800,Los Angeles,Cancer,9538327754,ethan68@yahoo.com,General,2023-11-26
+Alice,48,Female,34525,Los Angeles,Asthma,9583100574,alice69@outlook.com,Orthopedics,2023-11-24
+Diana,21,Male,54196,Houston,Asthma,9351341149,diana70@outlook.com,Pediatrics,2023-02-11
+Alice,69,Female,41521,Houston,Diabetes,9121967119,alice71@gmail.com,Neurology,2023-06-08
+Ethan,63,Male,81065,Chicago,Asthma,9981872488,ethan72@yahoo.com,Orthopedics,2023-08-15
+Hannah,37,Female,46523,Phoenix,Cold,9500861804,hannah73@outlook.com,General,2023-08-12
+Alice,42,Male,93775,Phoenix,Cold,9610571278,alice74@outlook.com,Pediatrics,2023-11-10
+Alice,45,Female,82953,Los Angeles,Cancer,9201722573,alice75@outlook.com,Neurology,2023-04-15
+Ian,60,Male,19474,Los Angeles,Flu,9564684367,ian76@yahoo.com,General,2023-01-12
+Hannah,63,Male,45433,Los Angeles,Flu,9345056576,hannah77@outlook.com,Neurology,2023-06-08
+Hannah,46,Male,49034,Chicago,COVID-19,9461050788,hannah78@gmail.com,Cardiology,2023-12-04
+Hannah,49,Male,99627,Houston,COVID-19,9332642249,hannah79@outlook.com,Pediatrics,2023-06-17
+Fiona,32,Female,91063,Chicago,COVID-19,9406352000,fiona80@gmail.com,Orthopedics,2023-07-17
+Jenny,44,Female,29282,New York,COVID-19,9967492429,jenny81@yahoo.com,Neurology,2023-09-05
+Fiona,33,Male,30855,Los Angeles,Flu,9932813448,fiona82@yahoo.com,Cardiology,2023-06-17
+Alice,66,Female,11846,New York,Asthma,9111347780,alice83@outlook.com,General,2023-04-16
+Fiona,47,Male,16111,Los Angeles,COVID-19,9962436510,fiona84@outlook.com,Orthopedics,2023-07-24
+Charlie,33,Female,90732,Los Angeles,COVID-19,9112471660,charlie85@yahoo.com,Cardiology,2023-03-16
+Jenny,49,Female,95300,Phoenix,COVID-19,9749619914,jenny86@yahoo.com,Pediatrics,2023-03-02
+Fiona,40,Male,23527,Chicago,Flu,9889732376,fiona87@outlook.com,Neurology,2023-03-11
+Ethan,32,Female,95439,New York,Flu,9305467392,ethan88@yahoo.com,Neurology,2023-02-20
+Jenny,33,Female,68500,Houston,COVID-19,9891845365,jenny89@gmail.com,General,2023-11-17
+Hannah,43,Female,86719,Chicago,Cancer,9472921838,hannah90@gmail.com,Neurology,2023-03-06
+Hannah,62,Male,92138,Phoenix,Cold,9122390755,hannah91@outlook.com,Cardiology,2023-01-13
+Charlie,65,Female,98276,Houston,Diabetes,9706924172,charlie92@outlook.com,Neurology,2023-05-09
+Charlie,33,Male,44071,New York,Cancer,9443395694,charlie93@outlook.com,General,2023-10-12
+Bob,70,Female,65961,Chicago,Flu,9465799062,bob94@outlook.com,Orthopedics,2023-07-10
+Charlie,35,Male,88569,Los Angeles,Cancer,9109583329,charlie95@yahoo.com,Neurology,2023-07-04
+Jenny,53,Female,37494,New York,Diabetes,9751485449,jenny96@gmail.com,Pediatrics,2023-12-25
+Fiona,50,Female,26081,Chicago,Flu,9813673092,fiona97@yahoo.com,Pediatrics,2023-12-20
+Ethan,39,Male,73720,Phoenix,Asthma,9757001297,ethan98@gmail.com,Cardiology,2023-10-28
+Ethan,55,Female,66796,New York,Asthma,9435032335,ethan99@outlook.com,Neurology,2023-08-21
