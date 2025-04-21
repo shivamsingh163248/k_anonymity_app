@@ -1,77 +1,49 @@
-from flask import Flask, render_template, request, send_file, redirect, url_for
+from flask import Flask, render_template, request, redirect, send_file, url_for
 import pandas as pd
 import os
+from anonymizer import apply_k_anonymity
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-latest_output_file = ""
+# Sample attributes (your dataset headers)
+ALL_ATTRIBUTES = ['Name', 'Age', 'Gender', 'ZIP_Code', 'City', 'Disease', 'Phone', 'Email', 'Department', 'Visit_Date']
+anonymized_file_path = os.path.join(UPLOAD_FOLDER, 'anonymized_output.csv')
 
-# def anonymize_data(df):
-#     df['Age'] = df['Age'].apply(lambda x: '20-39' if 20 <= x <= 39 else '40+')
-#     df['ZIP_Code'] = df['ZIP_Code'].astype(str).str[:3] + '**'
-#     return df
-
-def anonymize_data(df):
-    df = df.copy()
-
-    # Anonymize Name
-    df['Name'] = df['Name'].apply(lambda x: 'Name_' + x[0].upper() + '***')
-
-    # Anonymize Age into buckets
-    df['Age'] = df['Age'].apply(lambda x: '18-29' if x <= 29 else ('30-49' if x <= 49 else '50+'))
-
-    # Gender - keeping as-is (or mask if required)
-    # df['Gender'] = 'Confidential'  # Optional masking
-
-    # ZIP_Code - keep first 3 digits
-    df['ZIP_Code'] = df['ZIP_Code'].astype(str).str[:3] + '**'
-
-    # City - generalize
-    df['City'] = df['City'].apply(lambda x: 'City_***')
-
-    # Disease - can keep or hash (keeping as-is for demo)
-    # df['Disease'] = df['Disease'].apply(lambda x: hash(x))  # Optional
-
-    # Phone - mask last 5 digits
-    df['Phone'] = df['Phone'].astype(str).str[:5] + '*****'
-
-    # Email - mask user part
-    df['Email'] = df['Email'].apply(lambda x: 'xxxx' + x[x.find('@'):])
-
-    # Department - generalize
-    df['Department'] = df['Department'].apply(lambda x: 'Dept_***')
-
-    # Visit_Date - generalize to month
-    df['Visit_Date'] = pd.to_datetime(df['Visit_Date'], errors='coerce').dt.strftime('%Y-%m')
-
-    return df
 
 @app.route('/')
 def index():
-    return render_template('index.html', preview=None, download_link=None)
+    return render_template('index.html', attributes=ALL_ATTRIBUTES, table_html=None)
+
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    global latest_output_file
     file = request.files['file']
-    if file.filename.endswith('.csv'):
-        path = os.path.join(UPLOAD_FOLDER, file.filename)
-        file.save(path)
-        df = pd.read_csv(path)
-        anon_df = anonymize_data(df)
-        output_path = os.path.join(UPLOAD_FOLDER, 'anonymized_' + file.filename)
-        anon_df.to_csv(output_path, index=False)
-        latest_output_file = output_path
-        preview_data = anon_df.head(10).to_html(classes='table', index=False)
-        return render_template('index.html', preview=preview_data, download_link=True)
-    return "Invalid file type. Please upload a CSV."
+    selected_attributes = request.form.getlist('selected_attributes')
+    k_value = int(request.form.get('k_value'))
+
+    if not file or not selected_attributes or not k_value:
+        return "Please upload a CSV, select attributes, and specify K.", 400
+
+    df = pd.read_csv(file)
+
+    # Apply K-Anonymity
+    anonymized_df = apply_k_anonymity(df, selected_attributes, k_value)
+
+    # Save for download
+    anonymized_df.to_csv(anonymized_file_path, index=False)
+
+    # Generate HTML table preview
+    table_html = anonymized_df.head(10).to_html(classes='table table-striped', index=False)
+
+    return render_template('index.html', attributes=ALL_ATTRIBUTES, table_html=table_html)
+
 
 @app.route('/download')
 def download():
-    global latest_output_file
-    return send_file(latest_output_file, as_attachment=True)
+    return send_file(anonymized_file_path, as_attachment=True)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
